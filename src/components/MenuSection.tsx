@@ -3,6 +3,14 @@ import chickenShawarma from "@/assets/chicken-shawarma.jpg";
 import beefShawarma from "@/assets/beef-shawarma.jpg";
 import fries from "@/assets/fries.jpg";
 import salad from "@/assets/salad.jpg";
+import coke from "@/assets/coke.jpg";
+import fanta from "@/assets/fanta.jpg";
+import sprite from "@/assets/sprite.jpg";
+import powerade from "@/assets/powerade.jpg";
+import milkshake from "@/assets/milkshake.jpg";
+import lemonade from "@/assets/lemonade.jpg";
+import dragonFruitLemonade from "@/assets/dragon-fruit-lemonade.jpg";
+import water from "@/assets/water.jpg";
 
 const menuData = {
   shawarmas: [
@@ -46,17 +54,59 @@ const menuData = {
   ],
   drinks: [
     {
-      title: "Fresh Lemonade",
-      description: "Refreshing homemade lemonade with a hint of mint",
-      price: "$3.99",
-      image: fries, // Placeholder - would need drink image
+      title: "Coca-Cola",
+      description: "Classic refreshing Coke, perfectly chilled",
+      price: "$2.99",
+      image: coke,
       category: "Drinks"
     },
     {
-      title: "Iced Tea",
-      description: "Cool and refreshing iced tea, perfect with any meal",
+      title: "Fanta Orange",
+      description: "Vibrant orange soda with a burst of citrus flavor",
       price: "$2.99",
-      image: salad, // Placeholder - would need drink image
+      image: fanta,
+      category: "Drinks"
+    },
+    {
+      title: "Sprite",
+      description: "Crisp lemon-lime soda, light and refreshing",
+      price: "$2.99",
+      image: sprite,
+      category: "Drinks"
+    },
+    {
+      title: "Powerade",
+      description: "Energizing sports drink to fuel your day",
+      price: "$3.49",
+      image: powerade,
+      category: "Drinks"
+    },
+    {
+      title: "Vanilla Milkshake",
+      description: "Creamy vanilla milkshake topped with whipped cream",
+      price: "$4.99",
+      image: milkshake,
+      category: "Drinks"
+    },
+    {
+      title: "Fresh Lemonade",
+      description: "Refreshing homemade lemonade with mint and lemon slices",
+      price: "$3.99",
+      image: lemonade,
+      category: "Drinks"
+    },
+    {
+      title: "Dragon Fruit Lemonade",
+      description: "Exotic dragon fruit lemonade with a tropical twist",
+      price: "$4.49",
+      image: dragonFruitLemonade,
+      category: "Drinks"
+    },
+    {
+      title: "Bottled Water",
+      description: "Pure refreshing water, perfectly chilled",
+      price: "$1.99",
+      image: water,
       category: "Drinks"
     }
   ]
@@ -100,7 +150,7 @@ const MenuSection = () => {
         {/* Drinks */}
         <div>
           <h3 className="text-3xl font-bold mb-8 text-center text-foreground">Drinks</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {menuData.drinks.map((item, index) => (
               <MenuCard key={index} {...item} />
             ))}
