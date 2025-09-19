@@ -1,8 +1,13 @@
 import MenuCard from "./MenuCard";
 import chickenShawarma from "@/assets/chicken-shawarma.jpg";
 import beefShawarma from "@/assets/beef-shawarma.jpg";
+import lambShawarma from "@/assets/lamb-shawarma.jpg";
+import falafelShawarma from "@/assets/falafel-shawarma.jpg";
 import fries from "@/assets/fries.jpg";
 import salad from "@/assets/salad.jpg";
+import hummus from "@/assets/hummus.jpg";
+import tabbouleh from "@/assets/tabbouleh.jpg";
+import onionRings from "@/assets/onion-rings.jpg";
 import coke from "@/assets/coke.jpg";
 import fanta from "@/assets/fanta.jpg";
 import sprite from "@/assets/sprite.jpg";
@@ -29,10 +34,24 @@ const menuData = {
       category: "Shawarma"
     },
     {
+      title: "Lamb Shawarma",
+      description: "Premium tender lamb with Mediterranean herbs and traditional spices",
+      price: "$17.99",
+      image: lambShawarma,
+      category: "Shawarma"
+    },
+    {
+      title: "Falafel Shawarma",
+      description: "Crispy vegetarian falafel with fresh vegetables and tahini sauce",
+      price: "$11.99",
+      image: falafelShawarma,
+      category: "Shawarma"
+    },
+    {
       title: "Mixed Shawarma",
       description: "Perfect combination of chicken and beef with all the classic toppings",
       price: "$16.99",
-      image: chickenShawarma, // Using chicken image as placeholder
+      image: chickenShawarma,
       category: "Shawarma"
     }
   ],
@@ -49,6 +68,27 @@ const menuData = {
       description: "Fresh cucumbers, tomatoes, olives, and feta with olive oil dressing",
       price: "$7.99",
       image: salad,
+      category: "Sides"
+    },
+    {
+      title: "Creamy Hummus",
+      description: "Traditional hummus with olive oil, served with warm pita bread",
+      price: "$6.99",
+      image: hummus,
+      category: "Sides"
+    },
+    {
+      title: "Fresh Tabbouleh",
+      description: "Authentic Lebanese parsley salad with tomatoes, bulgur, and lemon",
+      price: "$8.99",
+      image: tabbouleh,
+      category: "Sides"
+    },
+    {
+      title: "Crispy Onion Rings",
+      description: "Golden fried onion rings with a perfect crunch and seasoning",
+      price: "$5.99",
+      image: onionRings,
       category: "Sides"
     }
   ],
